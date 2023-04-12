@@ -1,4 +1,4 @@
-require ( './helpers.js' );
+require('./helpers.js');
 
 describe('index.js', function () {
   const drivers = ['Antonia', 'Nuru', 'Amari', 'Mo'];
@@ -64,7 +64,7 @@ describe('index.js', function () {
       expect(fareTripler).to.be.a('function');
     });
 
-    it('triples fares', function() {
+    it('triples fares', function () {
       expect(fareTripler(12)).to.eql(36);
     });
   });
